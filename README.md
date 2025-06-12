@@ -42,13 +42,11 @@ Edit
 python checker.py
 Try entering a password like
 
-css
 Copy
 Edit
 Yaga@2006
 It will return:
 
-css
 Copy
 Edit
 ✅ Strong Password
@@ -56,8 +54,8 @@ Edit
 python
 Copy
 Edit
-import re
 
+import re
 def check_password_strength(password):
     length = len(password) >= 8
     upper = re.search(r"[A-Z]", password)
@@ -73,6 +71,8 @@ def check_password_strength(password):
 print("🔐 Password Strength Checker")
 password = input("Enter your password: ")
 print(check_password_strength(password))
+---
+
 💡 Future Ideas
 GUI version with Tkinter
 
